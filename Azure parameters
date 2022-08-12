@@ -1,0 +1,46 @@
+** Azure parameters **
+      
+      Parameters are used to change the values for each deployment.
+      
+      For example, you have a requirement to install a VM with same specs but the location is different. Instead of creating 2 bicep files we can create a location 
+      parameter.
+      
+      Syntax to create a parameter : param <parameter-name> <parameter-data-type>
+      
+      <parameter-name> is your custom name for parameter.
+      <parameter-data-type> is datatype of the parameter like string,
+      
+      
+      
+      How to assign a default vaule to the parameter : param <parameter-name> <parameter-data-type> = <default-value>
+      Example : param location string = 'westus'
+      
+      Same code in JSON looks like below 
+       
+       {
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.9.1.41621",
+      "templateHash": "14124952696502777844"
+    }
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "westus"
+    }
+  },
+  "resources": []
+}
+
+    You can use this link to convert your bicep code to JSON code : https://bicepdemo.z22.web.core.windows.net/
+    
+    
+ 
+      
+      
+      
+      
