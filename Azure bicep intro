@@ -1,0 +1,19 @@
+What is Azure Bicep?
+
+As we all know Azure Bicep is domain specific language which can be used to develop resource manager templates. We can use JSON to do the same.
+- Bicep will declaratively deploy Azure resources.
+
+            Declarative vs imperative
+            
+            Declarative code : 
+              You'll mention the eng configuration. You won't mention how to accomplish the task. Ex: Bicep, JSON, Ansible, Redhat.
+            
+            Imperative code : 
+              You need to execute a sequence of commands to achieve the eng configuration. In this approach we are mentioning how to accomplish a task. Ex: Azure CLI,
+              Azure powershell.
+
+Advantages:
+- Simple syntax
+- Modules
+- Automatic dependency resolution
+
